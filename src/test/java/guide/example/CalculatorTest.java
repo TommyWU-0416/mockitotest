@@ -1,4 +1,4 @@
-package guide;
+package guide.example;
 
 import com.example.guide.Calculator;
 import org.junit.jupiter.api.*;
