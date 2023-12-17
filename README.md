@@ -24,13 +24,13 @@ JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
 
 ![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/1642c433-a56d-4106-9af5-c2daa5b0c242)
 
-### 3. 一般測試情境([官網](https://github.com/junit-team/junit5-samples/tree/HEAD/junit5-jupiter-starter-maven))
+### 3. 一般測試情境([官網](https://junit.org/junit5/docs/snapshot/user-guide/#writing-tests))
 
-#### `@Disable 使用`([CalculatorDisableTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorDisableTest.java))
+#### `@Disable 範例`([CalculatorDisableTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorDisableTest.java))
 當使用該註解會停用該方法測試
 ![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/cf892cda-dafc-47eb-8d55-ce534cea0702)
 
-#### `@RepeatedTest 使用`([CalculatorRepeatedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorRepeatedTest.java))
+#### `@RepeatedTest 範例`([CalculatorRepeatedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorRepeatedTest.java))
 可重複執行Test
 有以下幾種命名方式，先來看 `@RepeatedTest` 實作內容
 
@@ -52,7 +52,7 @@ JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
 ```
 ![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/7d64695b-2606-473f-bad2-1321b9ab6e4e)
 
-#### `@ParameterizedTest 使用`([CalculatorWithCsvSourceParameterizedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorWithCsvSourceParameterizedTest.java)、[CalculatorWithValueSourceParameterizedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorWithValueSourceParameterizedTest.java))
+#### `@ParameterizedTest 範例`([CalculatorWithCsvSourceParameterizedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorWithCsvSourceParameterizedTest.java)、[CalculatorWithValueSourceParameterizedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorWithValueSourceParameterizedTest.java))
 告訴JUnit 說我要參數化的傳值進去，可以是陣列的資料，也可以是Csv格式
 ![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/16b69ecc-304d-47a7-81e5-0fcdeafef1c7)
 
