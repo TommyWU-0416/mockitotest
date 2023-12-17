@@ -9,11 +9,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 /**
  * 在 JUnit 5 中推薦使用
- *
  * @ExtendWith(SpringExtension.class) 替代 @RunWith(SpringRunner.class)
  */
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest()
@@ -30,7 +27,7 @@ public class UserServiceTest {
 
         //檢查結果
         assertNotNull(user);
-        assertEquals(user.getId(), Integer.valueOf(1));
-        assertEquals(user.getName(), "aa");
+        assertEquals(Integer.valueOf(1), user.getId());
+        assertEquals("John", user.getName());
     }
 }
