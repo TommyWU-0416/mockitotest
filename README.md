@@ -52,4 +52,12 @@ JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
 ```
 ![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/7d64695b-2606-473f-bad2-1321b9ab6e4e)
 
+#### `@ParameterizedTest 使用`([CalculatorWithCsvSourceParameterizedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorWithCsvSourceParameterizedTest.java)、[CalculatorWithValueSourceParameterizedTest.java](src%2Ftest%2Fjava%2Fguide%2Fexample%2FCalculatorWithValueSourceParameterizedTest.java))
+告訴JUnit 說我要參數化的傳值進去，可以是陣列的資料，也可以是Csv格式
+![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/16b69ecc-304d-47a7-81e5-0fcdeafef1c7)
+
+
+
+
+
 ### 4. 一般測試情境([參考](https://kucw.github.io/blog/2020/2/spring-unit-test-mockito/))
