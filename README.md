@@ -26,8 +26,30 @@ JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
 
 ### 3. 一般測試情境([官網](https://github.com/junit-team/junit5-samples/tree/HEAD/junit5-jupiter-starter-maven))
 
-#### ``@Disable 使用``
+#### `@Disable 使用`
 當使用該註解會停用該方法測試
 ![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/cf892cda-dafc-47eb-8d55-ce534cea0702)
+
+#### `@RepeatedTest 使用`
+可重複執行Test
+有以下幾種命名方式，先來看 `@RepeatedTest` 實作內容
+
+![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/9fae8ee5-ae07-47c1-8c20-6bb60af13d03)
+
+看不懂怎麼用，就來看下面範例
+```java=
+// 指定重複次數，不指定名稱，此時會去找 default
+@RepeatedTest(3)
+
+// 使用 @DisplayName 自定義測試名稱，透過這樣的方式可以指定 {displayName}
+// 內建提供 {currentRepetition} {totalRepetitions} 可拿來使用
+@DisplayName("自定義名稱")
+@RepeatedTest(value = 2, name = "{displayName} 第 {currentRepetition} 次 總共 {totalRepetitions} 次")
+
+// 內建提供 LONG_DISPLAY_NAME 字串可用
+@DisplayName("預設名稱重複測試")
+@RepeatedTest(value = 2, name = RepeatedTest.LONG_DISPLAY_NAME)
+```
+![image](https://github.com/TommyWU-0416/mockitotest/assets/49664867/7d64695b-2606-473f-bad2-1321b9ab6e4e)
 
 ### 4. 一般測試情境([參考](https://kucw.github.io/blog/2020/2/spring-unit-test-mockito/))
